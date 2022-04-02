@@ -9,13 +9,13 @@ cap.set(4, 480)
 cap.set(cv2.CAP_PROP_FPS, 60)
 segmentor = SelfiSegmentation()
 fpsReader = cvzone.FPS()
-imgBg = cv2. imread("image/img3.jpg")
+imgBg = cv2. imread("image/1.jpg")
 
 listImg = os.listdir("image")
 print(listImg)
 imgList=[]
 for imgPath in listImg:
-    img = cv2.imread(f'Images/{imgPath}')
+    img = cv2.imread(f'images/{imgPath}')
     imgList.append(img)
 print((len(imgList)))
 
